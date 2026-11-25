@@ -4,7 +4,7 @@ A customer-facing cart pricing engine. It picks the best offer per item, stacks 
 
 [![CI](https://github.com/VaishnaviGC/discount-engine-assignment/actions/workflows/ci.yml/badge.svg)](https://github.com/VaishnaviGC/discount-engine-assignment/actions/workflows/ci.yml)
 
-**🔗 Live demo:** _LIVE_URL_ &nbsp;·&nbsp; Sample files to try: [`sample-data/`](sample-data/)
+**🔗 Live demo:** https://discount-engine-assignment-eosin.vercel.app &nbsp;·&nbsp; Sample files to try: [`sample-data/`](sample-data/)
 
 > **Main finding: the brief's selection rule can make the customer pay more.**
 > "Biggest discount per item" and "always give the customer the biggest saving" conflict near a cart threshold. A bigger item discount can push the cart *below* the threshold and lose the cart offer.
