@@ -12,9 +12,9 @@ export default function DataTable({ columns, rows, emptyMessage = 'No data loade
         style={{
           padding: '1rem',
           textAlign: 'center',
-          color: '#888',
+          color: '#8A8273',
           fontSize: 13,
-          border: '1px solid #CECECE',
+          border: '1px solid #DDD3C3',
           borderRadius: 4,
         }}
       >
@@ -24,10 +24,10 @@ export default function DataTable({ columns, rows, emptyMessage = 'No data loade
   }
 
   return (
-    <div style={{ overflowX: 'auto', border: '1px solid #CECECE', borderRadius: 4 }}>
+    <div style={{ overflowX: 'auto', border: '1px solid #DDD3C3', borderRadius: 4 }}>
       <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 12 }}>
         <thead>
-          <tr style={{ background: '#131A48', color: '#fff' }}>
+          <tr style={{ background: '#0E3B35', color: '#fff' }}>
             {columns.map((col) => (
               <th
                 key={col.key}
@@ -50,10 +50,10 @@ export default function DataTable({ columns, rows, emptyMessage = 'No data loade
           {rows.map((row, i) => (
             <tr
               key={i}
-              style={{ background: i % 2 === 0 ? '#fff' : '#fafafa', borderBottom: '1px solid #f0f0f0' }}
+              style={{ background: i % 2 === 0 ? '#fff' : '#FBF8F3', borderBottom: '1px solid #F1EBE1' }}
             >
               {columns.map((col) => (
-                <td key={col.key} style={{ padding: '6px 10px', color: '#131A48', verticalAlign: 'top' }}>
+                <td key={col.key} style={{ padding: '6px 10px', color: '#0E3B35', verticalAlign: 'top' }}>
                   {col.render ? col.render(row[col.key], row) : row[col.key] ?? '—'}
                 </td>
               ))}
